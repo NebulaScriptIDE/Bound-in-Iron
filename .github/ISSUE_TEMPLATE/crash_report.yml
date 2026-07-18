@@ -1,0 +1,147 @@
+name: Crash Report
+description: Report a game crash or freeze in Bound in Iron.
+title: "[Crash] "
+labels:
+  - crash
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Crash Report
+
+        Use this template for crashes, freezes, unexpected shutdowns, or situations where the game becomes completely unresponsive.
+
+  - type: input
+    id: version
+    attributes:
+      label: Game Version
+      description: What version of Bound in Iron are you using?
+      placeholder: "Example: v0.1.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: Where did the crash happen?
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Steam Deck
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: hardware
+    attributes:
+      label: Hardware Specifications
+      description: Provide your system specifications.
+      placeholder: "Example: RTX 4060, Ryzen 7 7800X3D, 32GB RAM"
+
+  - type: dropdown
+    id: crash_type
+    attributes:
+      label: Crash Type
+      description: What happened?
+      options:
+        - Game closes instantly
+        - Game freezes
+        - Game becomes unresponsive
+        - Black screen
+        - Crash during loading
+        - Crash during gameplay
+        - Crash after saving
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: location
+    attributes:
+      label: When Did The Crash Occur?
+      description: What were you doing when the crash happened?
+      options:
+        - Launching the game
+        - Loading a save
+        - Exploring the world
+        - Entering a town
+        - Combat
+        - Castle siege
+        - Trading
+        - Crafting
+        - Quest interaction
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Crash Description
+      description: Describe what happened before and during the crash.
+      placeholder: |
+        Example:
+        The game crashes every time I enter a siege battle near the northern castle.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps To Reproduce
+      description: List the steps needed to trigger the crash.
+      placeholder: |
+        1. Load save file
+        2. Travel to location
+        3. Start battle
+        4. Game crashes
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Crash Logs
+      description: Paste crash logs, error messages, or stack traces here.
+      placeholder: |
+        Paste logs here.
+
+  - type: textarea
+    id: save_file
+    attributes:
+      label: Save File Information
+      description: Provide information about the affected save file.
+      placeholder: |
+        Example:
+        Save name:
+        Approximate playtime:
+        Location:
+        Current quest:
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or Videos
+      description: Add screenshots or videos showing the issue.
+      placeholder: |
+        Drag and drop files here.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Add anything else that may help investigate the crash.
+      placeholder: "Additional details here."
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have searched existing issues and this crash has not already been reported.
+          required: true
+        - label: I have included all available crash information.
+          required: true

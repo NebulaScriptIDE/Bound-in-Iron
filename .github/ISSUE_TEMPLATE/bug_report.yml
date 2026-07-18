@@ -1,0 +1,142 @@
+name: Bug Report
+description: Report a bug or unexpected behavior in Bound in Iron.
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Bug Report
+
+        Thank you for helping improve Bound in Iron.
+
+        Please provide as much information as possible so the issue can be reproduced and fixed.
+
+  - type: input
+    id: version
+    attributes:
+      label: Game Version
+      description: What version of Bound in Iron are you using?
+      placeholder: "Example: v0.1.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: Where did this issue occur?
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Steam Deck
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Bug Category
+      description: What type of issue is this?
+      options:
+        - Gameplay
+        - Combat
+        - AI
+        - Quests
+        - Factions
+        - Economy
+        - Inventory
+        - Crafting
+        - World / Environment
+        - Graphics
+        - Audio
+        - Controls
+        - Save System
+        - Performance
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: Describe what happened.
+      placeholder: |
+        Example:
+        The blacksmith NPC disappears after completing the town defense quest.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: List the steps needed to recreate the issue.
+      placeholder: |
+        1. Enter the town of ______
+        2. Accept the quest ______
+        3. Complete the objective
+        4. The NPC disappears
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should have happened?
+      placeholder: |
+        Example:
+        The NPC should remain in the town after the quest is completed.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+      placeholder: |
+        Example:
+        The NPC disappears and the quest cannot continue.
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or Error Messages
+      description: Paste any relevant logs, crash reports, or error messages.
+      placeholder: |
+        Paste logs here.
+
+        If you do not have any logs, leave this blank.
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or Videos
+      description: Add screenshots, videos, or other visual evidence if available.
+      placeholder: |
+        Drag and drop images or videos here.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Add anything else that may help investigate the issue.
+      placeholder: "Any extra details."
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have searched existing issues and this bug has not already been reported.
+          required: true
+        - label: I have provided enough information to reproduce this issue.
+          required: true

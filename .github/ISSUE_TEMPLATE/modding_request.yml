@@ -1,0 +1,98 @@
+name: Modding Request
+description: Suggest improvements or features for modding support in Bound in Iron.
+title: "[Modding] "
+labels:
+  - modding
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Modding Request
+
+        Use this template to suggest modding features, tools, documentation, APIs, or improvements for the Bound in Iron modding ecosystem.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Modding Category
+      description: What area of modding does this request relate to?
+      options:
+        - Modding API
+        - Documentation
+        - Custom Content
+        - Maps and World Editing
+        - Quests and Story
+        - Characters and NPCs
+        - Weapons and Armor
+        - Factions
+        - Economy
+        - User Interface
+        - Scripting
+        - Tools
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: feature
+    attributes:
+      label: Modding Feature Request
+      description: Describe the modding feature or improvement you would like.
+      placeholder: |
+        Example:
+        Add support for custom factions created by mod developers.
+    validations:
+      required: true
+
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Purpose
+      description: Explain why this would improve the modding experience.
+      placeholder: |
+        Example:
+        This would allow creators to build custom kingdoms and expand the game's world.
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Possible Implementation
+      description: Describe how this feature could work.
+      placeholder: |
+        Example:
+        Provide a configuration file where creators can define faction names, colors, leaders, and relationships.
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples and References
+      description: Mention games, tools, or systems with similar features.
+      placeholder: |
+        Example:
+        Similar to the modding tools available for Mount & Blade.
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature?
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Add any other relevant details.
+      placeholder: "Additional details here."
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have checked existing issues and this modding request has not already been suggested.
+          required: true

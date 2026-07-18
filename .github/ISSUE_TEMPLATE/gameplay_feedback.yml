@@ -1,0 +1,105 @@
+name: Gameplay Feedback
+description: Share feedback about the overall gameplay experience in Bound in Iron.
+title: "[Gameplay] "
+labels:
+  - feedback
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Gameplay Feedback
+
+        Use this template to share thoughts about the overall gameplay experience, including pacing, difficulty, immersion, progression, and player experience.
+
+  - type: input
+    id: version
+    attributes:
+      label: Game Version
+      description: What version of Bound in Iron are you playing?
+      placeholder: "Example: v0.1.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Gameplay Area
+      description: What part of the gameplay experience does this feedback relate to?
+      options:
+        - Overall Experience
+        - Difficulty
+        - Progression
+        - Exploration
+        - Quests
+        - Factions
+        - Combat
+        - Economy
+        - Survival
+        - World Atmosphere
+        - Immersion
+        - Player Choices
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: experience
+    attributes:
+      label: Gameplay Experience
+      description: Describe your experience with this part of the game.
+      placeholder: |
+        Example:
+        The early game feels challenging, but there are not enough ways for a new mercenary to earn money safely.
+    validations:
+      required: true
+
+  - type: textarea
+    id: positive
+    attributes:
+      label: What Works Well?
+      description: Describe parts of the gameplay that you think are successful.
+      placeholder: |
+        Example:
+        The faction system makes choices feel meaningful because every group has different goals.
+
+  - type: textarea
+    id: improvement
+    attributes:
+      label: What Could Be Improved?
+      description: Explain what could make the gameplay better.
+      placeholder: |
+        Example:
+        Add more events while traveling between regions to make the world feel more alive.
+
+  - type: textarea
+    id: suggestions
+    attributes:
+      label: Suggestions
+      description: Provide ideas that could improve the experience.
+      placeholder: |
+        Example:
+        Add more consequences for supporting one faction over another.
+
+  - type: textarea
+    id: comparison
+    attributes:
+      label: References or Comparisons
+      description: Mention other games or experiences that inspired your feedback.
+      placeholder: |
+        Example:
+        Similar to how Mount & Blade handles army management.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Add any other relevant details.
+      placeholder: "Additional details here."
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have checked existing discussions and issues before submitting this feedback.
+          required: true

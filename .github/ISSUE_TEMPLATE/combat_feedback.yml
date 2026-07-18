@@ -1,0 +1,114 @@
+name: Combat Feedback
+description: Report issues or suggest improvements related to combat systems.
+title: "[Combat] "
+labels:
+  - combat
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Combat Feedback
+
+        Use this template for feedback about melee combat, ranged combat, weapons, armor, enemy behavior, and combat mechanics.
+
+  - type: input
+    id: version
+    attributes:
+      label: Game Version
+      description: What version of Bound in Iron are you playing?
+      placeholder: "Example: v0.1.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Combat Category
+      description: What part of combat does this feedback relate to?
+      options:
+        - Melee Combat
+        - Ranged Combat
+        - Blocking and Parrying
+        - Dodging and Movement
+        - Weapons
+        - Armor
+        - Horse Combat
+        - Enemy AI
+        - Companion AI
+        - Siege Combat
+        - Damage System
+        - Stamina System
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue
+    attributes:
+      label: Combat Issue or Suggestion
+      description: Describe the problem or improvement you would like to see.
+      placeholder: |
+        Example:
+        Heavy weapons feel too slow compared to lighter weapons, making them less useful.
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_behavior
+    attributes:
+      label: Current Combat Behavior
+      description: Explain how the combat system currently works.
+      placeholder: |
+        Example:
+        Swords deal high damage against plate armor even though they should be less effective.
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Desired Combat Behavior
+      description: Explain how you think the system should work.
+      placeholder: |
+        Example:
+        Blunt weapons should be more effective against armored opponents.
+    validations:
+      required: false
+
+  - type: textarea
+    id: balance
+    attributes:
+      label: Balance Considerations
+      description: Explain how this change could affect gameplay balance.
+      placeholder: |
+        Consider:
+        - Weapon balance
+        - Armor effectiveness
+        - Player skill
+        - AI difficulty
+        - Faction differences
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples
+      description: Add examples, comparisons, videos, or screenshots.
+      placeholder: |
+        Example:
+        - Weapon:
+        - Armor:
+        - Enemy type:
+        - Situation:
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Add any other relevant details.
+      placeholder: "Additional details here."
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have checked existing issues and discussions before submitting this feedback.
+          required: true

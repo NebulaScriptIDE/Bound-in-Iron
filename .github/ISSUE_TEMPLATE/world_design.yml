@@ -1,0 +1,102 @@
+name: World Design
+description: Suggest improvements or report issues related to the world, environments, and locations of Bound in Iron.
+title: "[World Design] "
+labels:
+  - world-design
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## World Design
+
+        Use this template for ideas and feedback related to the open world, regions, towns, castles, environments, atmosphere, and world-building.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: World Design Category
+      description: What part of the world does this relate to?
+      options:
+        - Regions
+        - Towns and Villages
+        - Castles and Fortresses
+        - Landscapes
+        - Weather and Seasons
+        - Wildlife
+        - Roads and Travel
+        - Environmental Storytelling
+        - Historical Accuracy
+        - World Events
+        - Map Design
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: What area of the world does this relate to?
+      placeholder: "Example: Whispering Fens, Siege Valleys, Trade Ridges"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: World Design Idea or Issue
+      description: Describe the problem, suggestion, or improvement.
+      placeholder: |
+        Example:
+        The northern mountain region could use more abandoned forts and hidden paths to make exploration more interesting.
+    validations:
+      required: true
+
+  - type: textarea
+    id: atmosphere
+    attributes:
+      label: Atmosphere and Immersion
+      description: Explain how this affects the feeling of the world.
+      placeholder: |
+        Example:
+        Add more signs of the plague through abandoned homes, empty streets, and quarantine areas.
+
+  - type: textarea
+    id: gameplay
+    attributes:
+      label: Gameplay Impact
+      description: Explain how this could affect exploration, survival, combat, or other systems.
+      placeholder: |
+        Example:
+        A mountain pass controlled by bandits could create new trade routes and travel risks.
+
+  - type: textarea
+    id: lore
+    attributes:
+      label: Lore or Historical Context
+      description: Explain any story, history, or background behind the idea.
+      placeholder: |
+        Example:
+        This castle could have been built by an old dynasty before the civil war.
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References and Inspiration
+      description: Add examples from games, history, or other media.
+      placeholder: |
+        Example:
+        Inspired by medieval fortress designs and realistic village layouts.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Add any other relevant details.
+      placeholder: "Additional details here."
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have checked existing issues and this world design idea has not already been reported.
+          required: true

@@ -1,0 +1,146 @@
+name: Performance Issue
+description: Report performance problems such as low FPS, lag, or high resource usage.
+title: "[Performance] "
+labels:
+  - performance
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Performance Issue
+
+        Use this template to report performance problems including frame rate drops, stuttering, long loading times, memory usage, or optimization issues.
+
+  - type: input
+    id: version
+    attributes:
+      label: Game Version
+      description: What version of Bound in Iron are you playing?
+      placeholder: "Example: v0.1.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: What platform are you playing on?
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Steam Deck
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: hardware
+    attributes:
+      label: Hardware Specifications
+      description: Provide your system specifications.
+      placeholder: |
+        Example:
+        CPU:
+        GPU:
+        RAM:
+        Storage:
+        Operating System:
+
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Performance Issue Type
+      description: What kind of performance problem are you experiencing?
+      options:
+        - Low FPS
+        - FPS Drops
+        - Stuttering
+        - Long Loading Times
+        - High Memory Usage
+        - High CPU Usage
+        - High GPU Usage
+        - Network Lag
+        - Input Delay
+        - World Loading Issues
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Performance Problem
+      description: Describe the performance issue.
+      placeholder: |
+        Example:
+        FPS drops from 60 to 20 when entering large castle battles.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps To Reproduce
+      description: Explain when and where the issue occurs.
+      placeholder: |
+        1. Travel to a large city
+        2. Enter a crowded marketplace
+        3. FPS begins dropping
+
+  - type: textarea
+    id: frequency
+    attributes:
+      label: Frequency
+      description: How often does this issue occur?
+      placeholder: |
+        Example:
+        Happens every time during castle sieges.
+
+  - type: textarea
+    id: settings
+    attributes:
+      label: Graphics Settings
+      description: Provide your current game settings.
+      placeholder: |
+        Resolution:
+        Graphics preset:
+        Shadow quality:
+        View distance:
+        Other settings:
+
+  - type: textarea
+    id: benchmarks
+    attributes:
+      label: Performance Data
+      description: Add FPS numbers, measurements, or monitoring results if available.
+      placeholder: |
+        Example:
+        Normal exploration: 90 FPS
+        Large battles: 35 FPS
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or Videos
+      description: Add screenshots, recordings, or performance graphs.
+      placeholder: |
+        Drag and drop files here.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Add anything else that may help investigate the issue.
+      placeholder: "Additional details here."
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have checked existing issues and this performance problem has not already been reported.
+          required: true

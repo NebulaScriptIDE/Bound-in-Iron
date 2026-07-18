@@ -1,0 +1,84 @@
+name: Documentation Issue
+description: Report problems or suggest improvements for project documentation.
+title: "[Docs] "
+labels:
+  - documentation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Documentation Issue
+
+        Use this template for problems or improvements related to documentation, guides, tutorials, references, and project information.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Documentation Category
+      description: What type of documentation does this relate to?
+      options:
+        - README
+        - Contributing Guide
+        - Security Policy
+        - Development Guide
+        - Modding Documentation
+        - API Documentation
+        - Code Comments
+        - Game Design Documentation
+        - Tutorials
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Documentation Location
+      description: Where is the documentation issue located?
+      placeholder: "Example: README.md, docs/combat-system.md, wiki page"
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Documentation Problem
+      description: Describe what is incorrect, missing, unclear, or outdated.
+      placeholder: |
+        Example:
+        The installation instructions do not explain how to set up the development environment.
+    validations:
+      required: true
+
+  - type: textarea
+    id: improvement
+    attributes:
+      label: Suggested Improvement
+      description: Explain how the documentation could be improved.
+      placeholder: |
+        Example:
+        Add a section explaining how the faction system works.
+    validations:
+      required: false
+
+  - type: textarea
+    id: affected_users
+    attributes:
+      label: Who Is Affected?
+      description: Explain who may have difficulty because of this issue.
+      placeholder: |
+        Example:
+        New contributors may not understand how to build the project.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Add any other relevant details.
+      placeholder: "Additional details here."
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have checked existing issues and this documentation issue has not already been reported.
+          required: true

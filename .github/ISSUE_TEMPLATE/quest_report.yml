@@ -1,0 +1,128 @@
+name: Quest Report
+description: Report issues or suggest improvements related to quests and story content.
+title: "[Quest] "
+labels:
+  - quest
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Quest Report
+
+        Use this template for quest bugs, missing objectives, dialogue problems, quest design feedback, or story-related issues.
+
+  - type: input
+    id: version
+    attributes:
+      label: Game Version
+      description: What version of Bound in Iron are you playing?
+      placeholder: "Example: v0.1.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Quest Category
+      description: What type of quest issue is this?
+      options:
+        - Quest Bug
+        - Missing Objective
+        - Quest Cannot Progress
+        - Dialogue Issue
+        - Choice and Consequence
+        - Quest Reward
+        - Quest Balance
+        - Story Feedback
+        - Quest Suggestion
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: quest_name
+    attributes:
+      label: Quest Name
+      description: What quest is this related to?
+      placeholder: "Example: The Siege of Black Hollow"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Quest Issue or Feedback
+      description: Describe the problem or suggestion.
+      placeholder: |
+        Example:
+        The quest objective does not update after delivering supplies to the castle.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps To Reproduce
+      description: Explain how to trigger the issue.
+      placeholder: |
+        1. Accept the quest
+        2. Complete the first objective
+        3. Return to the quest giver
+        4. Objective does not update
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should happen?
+      placeholder: |
+        Example:
+        The quest should update and unlock the next objective.
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happens?
+      placeholder: |
+        Example:
+        The quest remains stuck on the previous objective.
+
+  - type: textarea
+    id: choices
+    attributes:
+      label: Choices and Consequences
+      description: Explain how player decisions affect this quest.
+      placeholder: |
+        Example:
+        Choosing to support the Iron Guild should change the available dialogue options.
+
+  - type: textarea
+    id: suggestions
+    attributes:
+      label: Suggested Improvements
+      description: How could this quest be improved?
+      placeholder: |
+        Example:
+        Add more consequences after completing the quest.
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or Videos
+      description: Add screenshots, videos, or other evidence if available.
+      placeholder: |
+        Drag and drop files here.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Add any other relevant details.
+      placeholder: "Additional details here."
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have checked existing issues and this quest issue has not already been reported.
+          required: true

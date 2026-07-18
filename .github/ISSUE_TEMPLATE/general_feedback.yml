@@ -1,0 +1,86 @@
+name: General Feedback
+description: Share general thoughts, ideas, or feedback about Bound in Iron.
+title: "[Feedback] "
+labels:
+  - feedback
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## General Feedback
+
+        Use this template for feedback, ideas, opinions, or discussions that do not fit into another issue category.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Feedback Category
+      description: What does your feedback relate to?
+      options:
+        - Overall Game
+        - Story and Lore
+        - World Design
+        - Characters
+        - Factions
+        - Combat
+        - Economy
+        - User Interface
+        - Performance
+        - Accessibility
+        - Community
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Feedback
+      description: Share your thoughts or suggestions.
+      placeholder: |
+        Example:
+        The world feels interesting, but more events during travel could make exploration more engaging.
+    validations:
+      required: true
+
+  - type: textarea
+    id: positives
+    attributes:
+      label: What Do You Like?
+      description: Mention parts of Bound in Iron that you think work well.
+      placeholder: |
+        Example:
+        The faction system creates interesting choices and consequences.
+
+  - type: textarea
+    id: improvements
+    attributes:
+      label: What Could Be Improved?
+      description: Explain what areas could be better.
+      placeholder: |
+        Example:
+        More interaction with towns and NPCs would improve immersion.
+
+  - type: textarea
+    id: ideas
+    attributes:
+      label: Ideas
+      description: Share any ideas you have for the project.
+      placeholder: |
+        Example:
+        Add more unique mercenary companions with personal stories.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Add any other details or context.
+      placeholder: "Additional details here."
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have checked existing issues and discussions before submitting this feedback.
+          required: true

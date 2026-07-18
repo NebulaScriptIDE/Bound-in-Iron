@@ -1,0 +1,108 @@
+name: Localization Issue
+description: Report translation, language, or localization problems in Bound in Iron.
+title: "[Localization] "
+labels:
+  - localization
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Localization Issue
+
+        Use this template to report problems with translations, missing text, incorrect wording, or language support.
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language
+      description: Which language is affected?
+      options:
+        - English
+        - Spanish
+        - French
+        - German
+        - Italian
+        - Portuguese
+        - Russian
+        - Chinese
+        - Japanese
+        - Korean
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Localization Category
+      description: What type of localization issue is this?
+      options:
+        - Incorrect Translation
+        - Missing Translation
+        - Typo or Spelling Error
+        - Grammar Issue
+        - UI Text Problem
+        - Dialogue Issue
+        - Quest Text Issue
+        - Item Description Issue
+        - Subtitle Issue
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Location of Issue
+      description: Where does the incorrect or missing text appear?
+      placeholder: "Example: Inventory menu, Blacksmith dialogue, Quest description"
+
+  - type: textarea
+    id: incorrect_text
+    attributes:
+      label: Current Text
+      description: Provide the text that is incorrect or missing.
+      placeholder: |
+        Current text:
+        "Example incorrect text here"
+
+  - type: textarea
+    id: suggested_text
+    attributes:
+      label: Suggested Correction
+      description: Provide a corrected translation or improved wording.
+      placeholder: |
+        Suggested text:
+        "Example corrected text here"
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Explain where the text appears and what it means.
+      placeholder: |
+        Example:
+        This text appears when speaking to a merchant after completing a trade quest.
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Add screenshots showing the issue if available.
+      placeholder: |
+        Drag and drop images here.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Add any other relevant details.
+      placeholder: "Additional details here."
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have checked existing issues and this localization issue has not already been reported.
+          required: true

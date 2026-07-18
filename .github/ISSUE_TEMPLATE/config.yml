@@ -1,0 +1,14 @@
+blank_issues_enabled: true
+
+contact_links:
+  - name: Discussions
+    url: https://github.com/NebulaScriptIDE/Bound-in-Iron/discussions
+    about: Ask questions, share ideas, and discuss Bound in Iron with the community.
+
+  - name: Security Reports
+    url: https://github.com/NebulaScriptIDE/Bound-in-Iron/blob/main/SECURITY.md
+    about: Report security vulnerabilities privately.
+
+  - name: Documentation
+    url: https://github.com/NebulaScriptIDE/Bound-in-Iron/wiki
+    about: Read the project documentation and development information.

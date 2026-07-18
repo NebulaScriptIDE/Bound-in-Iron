@@ -1,0 +1,100 @@
+name: Feature Request
+description: Suggest a new feature or improvement for Bound in Iron.
+title: "[Feature] "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Feature Request
+
+        Use this template to suggest new gameplay features, systems, improvements, or ideas for Bound in Iron.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Feature Category
+      description: What area of the game does this feature relate to?
+      options:
+        - Combat
+        - Weapons and Armor
+        - Factions
+        - Quests
+        - World and Exploration
+        - Economy
+        - Trading
+        - Crafting
+        - Survival
+        - AI
+        - Characters
+        - Multiplayer
+        - Modding
+        - User Interface
+        - Accessibility
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Feature Description
+      description: Describe the feature you would like to see added.
+      placeholder: |
+        Example:
+        Add a reputation system where towns remember the player's actions.
+    validations:
+      required: true
+
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Purpose
+      description: Explain why this feature would improve the game.
+      placeholder: |
+        Example:
+        This would make faction choices feel more meaningful and create stronger consequences.
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Possible Implementation
+      description: Explain how you think this feature could work.
+      placeholder: |
+        Example:
+        Players could gain or lose reputation with factions based on quests, battles, and decisions.
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative Ideas
+      description: Are there other ways this feature could be implemented?
+      placeholder: |
+        Describe any alternative approaches.
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples and References
+      description: Add examples from other games, screenshots, videos, or inspiration.
+      placeholder: |
+        Example:
+        Similar to the faction reputation system in Mount & Blade.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Add any other details about the suggestion.
+      placeholder: "Additional details here."
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have checked existing issues and this feature has not already been suggested.
+          required: true

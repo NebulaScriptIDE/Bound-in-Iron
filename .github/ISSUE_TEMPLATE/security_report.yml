@@ -1,0 +1,121 @@
+name: Security Report
+description: Report a security vulnerability or security-related issue in Bound in Iron.
+title: "[Security] "
+labels:
+  - security
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Security Report
+
+        Use this template to report security vulnerabilities or issues that could affect the safety, privacy, or integrity of Bound in Iron.
+
+        Do not include sensitive information in public issues. For serious vulnerabilities, use a private reporting method if available.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Security Category
+      description: What type of security issue is this?
+      options:
+        - Account Security
+        - Authentication
+        - Multiplayer Security
+        - Save File Exploit
+        - Data Privacy
+        - Server Security
+        - Modding Security
+        - Code Vulnerability
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity Level
+      description: How serious is this issue?
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Game Version
+      description: What version of Bound in Iron is affected?
+      placeholder: "Example: v0.1.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Vulnerability Description
+      description: Describe the security issue.
+      placeholder: |
+        Explain what happens and why it could be a security concern.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps To Reproduce
+      description: Provide steps to reproduce the issue.
+      placeholder: |
+        1. Perform action
+        2. Trigger issue
+        3. Observe unexpected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Potential Impact
+      description: Explain what could happen if this issue is exploited.
+      placeholder: |
+        Example:
+        This could allow unauthorized modification of save data.
+
+  - type: textarea
+    id: proof
+    attributes:
+      label: Proof of Concept
+      description: Provide any additional evidence or technical details.
+      placeholder: |
+        Add relevant details here.
+
+        Remove sensitive information before submitting publicly.
+
+  - type: textarea
+    id: mitigation
+    attributes:
+      label: Suggested Fix
+      description: If you have an idea for preventing this issue, describe it here.
+      placeholder: |
+        Example:
+        Validate player data before loading save files.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Add any other relevant details.
+      placeholder: "Additional details here."
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have checked existing issues and this security issue has not already been reported.
+          required: true
+        - label: I will not publicly disclose sensitive vulnerability details.
+          required: true

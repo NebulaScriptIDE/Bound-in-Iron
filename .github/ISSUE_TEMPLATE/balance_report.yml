@@ -1,0 +1,102 @@
+name: Balance Report
+description: Report issues or suggest improvements related to game balance.
+title: "[Balance] "
+labels:
+  - balance
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Balance Report
+
+        Use this template to report balance issues involving combat, economy, factions, progression, or gameplay systems.
+
+        Please provide enough detail so the team can understand the problem and evaluate possible changes.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Balance Category
+      description: What area of the game needs balancing?
+      options:
+        - Combat
+        - Weapons
+        - Armor
+        - Enemies
+        - Factions
+        - Economy
+        - Trading
+        - Crafting
+        - Progression
+        - Survival Mechanics
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Game Version
+      description: What version of Bound in Iron are you playing?
+      placeholder: "Example: v0.1.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Balance Problem
+      description: Describe what feels unbalanced.
+      placeholder: |
+        Example:
+        Swords are too strong compared to axes because they defeat most armor types too easily.
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Gameplay Impact
+      description: How does this affect the player experience?
+      placeholder: |
+        Explain how this impacts combat, progression, economy, or overall gameplay.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Balance
+      description: What do you think would be a better balance?
+      placeholder: |
+        Example:
+        Increase armor effectiveness against cutting weapons while keeping blunt weapons useful.
+    validations:
+      required: false
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples or Evidence
+      description: Provide examples, numbers, screenshots, videos, or comparisons.
+      placeholder: |
+        Example:
+        - Weapon damage:
+        - Armor rating:
+        - Price comparison:
+        - Screenshot/video:
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Anything else that may help understand the issue.
+      placeholder: "Add any extra details here."
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have checked that this issue has not already been reported.
+          required: true
