@@ -1,0 +1,113 @@
+#auto detect text files
+* text=auto
+
+#source code
+*.c          text
+*.cc         text
+*.cpp        text
+*.cxx        text
+*.h          text
+*.hh         text
+*.hpp        text
+*.hxx        text
+*.inl        text
+*.ixx        text
+*.cppm       text
+
+#cmake
+CMakeLists.txt text
+*.cmake      text
+
+#scripts
+*.bat        text eol=crlf
+*.cmd        text eol=crlf
+*.ps1        text eol=crlf
+*.sh         text eol=lf
+*.py         text eol=lf
+
+#documentation
+*.md         text
+*.txt        text
+*.rst        text
+LICENSE      text
+NOTICE       text
+
+#configuration
+*.json       text
+*.yaml       text
+*.yml        text
+*.toml       text
+*.ini        text
+*.cfg        text
+*.conf       text
+*.xml        text
+
+#web
+*.html       text
+*.css        text
+*.js         text
+*.ts         text
+
+#shaders
+*.vert       text
+*.frag       text
+*.geom       text
+*.comp       text
+*.glsl       text
+*.hlsl       text
+*.wgsl       text
+
+#assets
+*.png        binary
+*.jpg        binary
+*.jpeg       binary
+*.webp       binary
+*.gif        binary
+*.bmp        binary
+*.tga        binary
+*.dds        binary
+*.ktx2       binary
+*.exr        binary
+*.hdr        binary
+
+#models
+*.obj        binary
+*.fbx        binary
+*.gltf       text
+*.glb        binary
+*.dae        binary
+*.blend      binary
+
+#audio
+*.wav        binary
+*.ogg        binary
+*.mp3        binary
+*.flac       binary
+
+#video
+*.mp4        binary
+*.mov        binary
+*.webm       binary
+
+#fonts
+*.ttf        binary
+*.otf        binary
+*.woff       binary
+*.woff2      binary
+
+#archives
+*.zip        binary
+*.7z         binary
+*.rar        binary
+*.tar        binary
+*.gz         binary
+
+#engine data
+*.bin        binary
+*.pak        binary
+*.dat        binary
+*.cache      binary
+*.db         binary
+
+#unity builds
+*.unity.cpp  text

@@ -1,0 +1,108 @@
+# build directories
+build/
+build-*/
+cmake-build-*/
+out/
+bin/
+lib/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+CTestTestfile.cmake
+cmake_install.cmake
+compile_commands.json
+install_manifest.txt
+Makefile
+
+# Visual Studio
+.vs/
+*.VC.db
+*.VC.opendb
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# CLion / JetBrains
+.idea/
+*.iml
+
+# Xcode
+DerivedData/
+.build/
+*.xcworkspace/
+*.xcodeproj/xcuserdata/
+*.xcuserdatad/
+*.xcuserstate
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Compiled objects
+*.o
+*.obj
+*.lo
+*.la
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+*.exe
+*.out
+*.app
+
+# Debugging
+*.pdb
+*.idb
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# Coverage
+coverage/
+*.gcda
+*.gcno
+*.gcov
+
+# Archives
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+
+# Environment files
+.env
+.env.*
+
+# Generated documentation
+docs/build/
+
+# Engine-generated cache
+.cache/
+
+# Third-party binaries
+third_party/**/build/
+third_party/**/bin/
+third_party/**/lib/
